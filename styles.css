@@ -46,14 +46,4 @@ p {
   border: 1px solid #0077cc;
   color: #0077cc;
 }
-
-.primary {
-  background: linear-gradient(to right, #0077cc, #00b4db);
-  color: white;
-  border: none;
- padding: 12px 20px;
-  border-radius: 8px;
-  text-decoration: none;
-  margin: 0 10px;
-}
   
