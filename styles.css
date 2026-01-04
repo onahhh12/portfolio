@@ -1,7 +1,25 @@
+:root {
+  --bg: #f5f7fa;
+  --text: #222;
+  --subtext: #555;
+  --card: #f9fafb;
+  --primary: #0077cc;
+  --gradient: linear-gradient(to right, #0077cc, #00b4db);
+}
+
+body.dark {
+  --bg: #0f172a;
+  --text: #e5e7eb;
+  --subtext: #9ca3af;
+  --card: #1e293b;
+  --primary: #38dbf8;
+  --gradient: linear-gradient(to right, #38dbf8, #0ea5e9);
+}
+
 body{
   fomt-family: "Segoe UI", sans-serif;
-  background: #f5f7fa;
-  color: #223;
+  background: var(--bg);
+  color: var(--text);
   margin: 0;
 }
 
