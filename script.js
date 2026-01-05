@@ -1,12 +1,12 @@
-const toggleTheme = document.getElementById("toggleTheme");
-const body = document.body;
-const avatar = document.getElementById("avatar");
+const toggle = document.getElementById("themeToggle");
 
-// Toggle dark mode and avatar
-toggle.addEventListener("click", () => {
+if (localStorage.getItem("theme") ==="dark") {
+  document.body.classList.add("dark");
+  toggle.textContent = "🌞";
+}
+toggle.addEventListner("click", () => {
   document.body.classList.toggle("dark");
-  
-  toggle.textContent = 
-
-document.body.classList.contains("dark") ? "🌞" : "🌙";
-});
+  const isDark = document.body.classList.toggle("dark");
+  toggle.textContent - isDark ? "🌞":
+    "🌙";
+  localStorage.setItem("theme", isDark ? });
