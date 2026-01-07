@@ -33,7 +33,7 @@ body{
   color: var(--primary);
   padding: 6px 14px;
   border-radius: 20px;
-  fonr-size: 14px;
+  font-size: 14px;
 }
 
 h1 {
@@ -106,7 +106,7 @@ p {
   transition: transformt 0.25s ease, box-shadow 0.25s ease;
 }
 
-.project-card:hover {
+.project-card::hover {
   transfor: translateY(-6px);
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.12);
 }
@@ -137,12 +137,12 @@ p {
   font_size: 14px;
   color: var(--primary);
   border: 1px solid var(--primary);
-  padding: 8px 14px;
+  padding: 12px 20px;
   border-radius: 8px;
 }
 
 .primary-link {
-  background: var(--gradient);
+  text-decoration: none;
   color: white;
   border: none;
 }
