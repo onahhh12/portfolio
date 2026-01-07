@@ -66,6 +66,11 @@ p {
   border: 1px solid var(--primary);
   color: var(--primary);
 }
+
+.btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
   
 .theme-toggle {
   position: fixed;
@@ -132,6 +137,14 @@ p {
   gap: 15px;
 }
 
+.btn, project-links a {
+  transition:
+    background 0.3s ease,
+    color 0.3s ease,
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
 .project-links a {
   text-decoration: none;
   font_size: 14px;
@@ -141,8 +154,19 @@ p {
   border-radius: 8px;
 }
 
+.project-links a:hover {
+  background: var(--primary);
+  color: white;
+  transform: translateY(-2px);
+}
+
 .primary-link {
   text-decoration: none;
   color: white;
   border: none;
+}
+
+.primary-link:hover {
+  opacity: 0.9;
+  transform: translateY(-2px) scale(1,02);
 }
