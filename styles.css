@@ -17,7 +17,7 @@ body.dark {
 }
 
 body{
-  fomt-family: "Segoe UI", sans-serif;
+  font-family: "Segoe UI", sans-serif;
   background: var(--bg);
   color: var(--text);
   margin: 0;
@@ -29,10 +29,10 @@ body{
 
   background: linear-gradient(
     to bottom, 
-    #ob4f8a 0%, 
+    #0b4f8a 0%, 
     #cfefff 50%, 
     #ffffff 60%, 
-    #ffb3v3 80%, 
+    #ffb3b3 80%, 
     #e63946 100%
   );
 }
@@ -94,7 +94,7 @@ p {
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
 }
 
-.project {
+.projects {
   padding: 80px 20px;
 }
 
@@ -114,14 +114,14 @@ p {
 
 .project-card {
   background: var(--card);
-  padding:25px;
+  padding: 25px;
   border-radius: 16px;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
-  transition: transformt 0.25s ease, box-shadow 0.25s ease;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
 
 .project-card:hover {
-  transfor: translateY(-6px);
+  transform: translateY(-6px);
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.12);
 }
 
@@ -174,7 +174,7 @@ p {
 
 .contact {
   padding: 80px 20px;
-  text-alin: center;
+  text-align: center;
 }
 
 .contact h2 {
