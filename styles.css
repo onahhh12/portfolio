@@ -26,6 +26,15 @@ body{
 .hero{
   text-align: center;
   padding: 80px 20px;
+
+  background: linear-gradient(
+    to bottom, 
+    #ob4f8a 0%, 
+    #cfefff 50%, 
+    #ffffff 60%, 
+    #ffb3v3 80%, 
+    #e63946 100%
+  );
 }
 
 .badge{
@@ -39,19 +48,19 @@ body{
 h1 {
   font-size: 48px;
   margin: 20px 0 10px;
-  color: var(--subtext);
+  color: #0f172a;
 }
 
 h3 {
   font-weight: 400;
-  color: var(--subtext);
+  color: #0f172a;
 }
 
 p {
   max-width: 600px;
   margin: 20px auto;
   line-height: 1.6;
-  color: var(--subtext);
+  color: #0f172a;
 }
   
 .buttons {
