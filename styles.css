@@ -111,7 +111,7 @@ p {
   transition: transformt 0.25s ease, box-shadow 0.25s ease;
 }
 
-.project-card::hover {
+.project-card:hover {
   transfor: translateY(-6px);
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.12);
 }
@@ -167,8 +167,9 @@ p {
 }
 
 .primary-link:hover {
-  opacity: 0.9;
-  transform: translateY(-2px) scale(1,02);
+  background: var(--gradient);
+  color: white;
+  transform: translateY(-2px);
 }
 
 .contact {
