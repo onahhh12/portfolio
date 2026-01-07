@@ -26,15 +26,6 @@ body {
 .hero {
   text-align: center;
   padding: 80px 20px;
-
-  background: linear-gradient(
-    to bottom, 
-    #0b4f8a 0%, 
-    #cfefff 50%, 
-    #ffffff 60%, 
-    #ffb3b3 80%, 
-    #e63946 100%
-  );
 }
 
 .badge{
