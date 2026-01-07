@@ -137,21 +137,12 @@ p {
   gap: 15px;
 }
 
-.btn, project-links a {
-  transition:
-    background 0.3s ease,
-    color 0.3s ease,
-    transform 0.2s ease,
-    box-shadow 0.2s ease;
-}
-
 .project-links a {
   text-decoration: none;
-  font_size: 14px;
-  color: var(--primary);
-  border: 1px solid var(--primary);
   padding: 12px 20px;
-  border-radius: 8px;
+  border: 1px solid var(--primary);
+  color: var(--primary);
+  transition: all 0.3s ease;
 }
 
 .project-links a:hover {
