@@ -16,14 +16,14 @@ body.dark {
   --gradient: linear-gradient(to right, #38dbf8, #0ea5e9);
 }
 
-body{
+body {
   font-family: "Segoe UI", sans-serif;
   background: var(--bg);
   color: var(--text);
   margin: 0;
 }
 
-.hero{
+.hero {
   text-align: center;
   padding: 80px 20px;
 
