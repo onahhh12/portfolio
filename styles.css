@@ -128,6 +128,11 @@ p {
 }
 
 .project-links {
+  display: flex;
+  gap: 15px;
+}
+
+.project-links a {
   text-decoration: none;
   font_size: 14px;
   color: var(--primary);
