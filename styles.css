@@ -170,3 +170,41 @@ p {
   opacity: 0.9;
   transform: translateY(-2px) scale(1,02);
 }
+
+.contact {
+  padding: 80px 20px;
+  text-alin: center;
+}
+
+.contact h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.contact-text {
+  max-width: 500px;
+  margin: auto;
+  color: var(--subtext);
+}
+
+.contact-links {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  flex-wrap: wrap;
+}
+
+.contact-links a {
+  text-decoration: none;
+  padding: 12px 20px;
+  border: 1px solid var(--primary);
+  color: var(--primary);
+  transition: all 0.3s ease;
+}
+
+.contact-links a:hover {
+  background: var(--gradient);
+  color: white;
+  transform: translateY(-2px);
+}
