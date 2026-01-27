@@ -56,9 +56,11 @@ p {
 }
 
 .Picture {
-  width: 120px;   /* try 80–150px */
-  height: auto;   /* keeps it proportional */
-  border-radius: 50%; /* optional: circle */
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #eee;
 }
   
 .buttons {
