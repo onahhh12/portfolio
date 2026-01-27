@@ -56,13 +56,12 @@ p {
 }
 
 .picture {
-  width: 150px;
-  height: 150px;
+  width: 180px;
+  height: 180px;
   border-radius: 50%;
   object-fit: cover;
   display: block;
   margin: 24px auto 0;
-  border: 5px solid red;
 }
   
 .buttons {
