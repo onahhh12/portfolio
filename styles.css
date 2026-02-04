@@ -212,33 +212,3 @@ p {
   transform: translateY(-2px);
 }
 
-
-.functions-grid {
-  max-width: 1100px;
-  margin: auto;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 25px;
-}
-
-.functions-card {
-  background: var(--card);
-  padding: 25px;
-  border-radius: 16px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
-  transition: transform 0.25s ease, box-shadow 0.25s ease;
-}
-
-.functions-card:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.12);
-}
-
-.functions-card h3 {
-  margin-top: 0;
-}
-
-.functions-card p {
-  font-size: 15px;
-  line-height: 1.5;
-}
