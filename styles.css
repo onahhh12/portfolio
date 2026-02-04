@@ -212,6 +212,16 @@ p {
   transform: translateY(-2px);
 }
 
+.functions {
+  padding: 80px 60px;
+}
+
+.functions h2 {
+  text-align: center;
+  margin-bottom: 50px;
+  font-size: 32px;
+}
+
 .functions-grid {
   max-width: 1100px;
   margin: auto;
