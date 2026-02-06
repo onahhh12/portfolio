@@ -12,8 +12,8 @@ body {
 }
 
 .hero h1{
-  font-weight: heavy;
-  align: center;
+  font-weight: 700;
+  text-align: center;
   color: blue;
 }
 
@@ -28,7 +28,9 @@ body {
 }
 
 .picture {
-  width: 250px;
+  width: 100%;
+  max-width: 160px;    
+  height: auto;
   border-radius: 12px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
   margin: 10px;
@@ -61,10 +63,9 @@ body {
 .image-row {
   display: flex;
   justify-content: center;
-  align-items: flex-start;
-  gap: 20px;
+  gap: 16px;
+  flex-wrap: wrap;
   margin-top: 20px;
-  flex-wrap: nowrap;
 }
 
 .image-row .picture {
