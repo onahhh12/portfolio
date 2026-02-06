@@ -65,12 +65,12 @@ body {
   justify-content: center;
   gap: 16px;
   flex-wrap: wrap;
-  margin-top: 20px;
 }
 
-.image-row .picture {
-  width: 45%;
-  max-width: 220px;
+.image-row img {
+  max-width: 160px;
+  width: 100%;
   height: auto;
 }
+
 
