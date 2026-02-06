@@ -48,6 +48,9 @@ body {
 }
 .functions-card {
   background: #f9f9f9;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   min-height: 500px;
   padding: 20px;
   border-radius: 15px;
@@ -55,6 +58,7 @@ body {
 
 .functions-card h3 {
   margin-bottom: 15px;
+  text-align: center;
 }
 
 .image-row {
@@ -63,12 +67,12 @@ body {
   align-items: flex-start;
   gap: 20px;
   margin-top: 20px;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
 }
 
 .image-row .picture {
-  width: 45%;
-  max-width: 220px;
+  width: 100%;
+  max-width: 160px;
   height: auto;
 }
 
