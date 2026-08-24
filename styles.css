@@ -10,7 +10,7 @@
   --teal: #1F8A70;
   --teal-soft: #E7F5F1;
 
-  --font-display: "Space Grotesk", sans-serif;
+  --font-display: "Source Serif 4", serif;
   --font-body: "IBM Plex Sans", sans-serif;
   --font-mono: "IBM Plex Mono", monospace;
 }
@@ -42,23 +42,17 @@ a {
   padding: 0 28px;
 }
 
-/* --- Eyebrows / signature element --- */
-.eyebrow {
-  font-family: var(--font-mono);
-  font-size: 13px;
-  letter-spacing: 0.02em;
-  color: var(--accent);
-  margin: 0 0 14px 0;
-}
-
-.eyebrow.terminal {
-  color: var(--slate);
-  font-size: 13px;
-  background: var(--paper-alt);
+/* --- Availability badge --- */
+.badge-pill {
   display: inline-block;
-  padding: 6px 12px;
-  border-radius: 6px;
-  border: 1px solid var(--border);
+  font-family: var(--font-body);
+  font-weight: 500;
+  font-size: 13.5px;
+  color: var(--accent);
+  background: var(--accent-soft);
+  padding: 7px 14px;
+  border-radius: 20px;
+  margin: 0;
 }
 
 /* --- Hero --- */
@@ -71,22 +65,6 @@ a {
   align-items: center;
   gap: 22px;
   margin-top: 22px;
-}
-
-.badge {
-  flex: 0 0 auto;
-  width: 68px;
-  height: 68px;
-  border-radius: 14px;
-  background: var(--ink);
-  color: var(--paper);
-  font-family: var(--font-display);
-  font-weight: 700;
-  font-size: 22px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  letter-spacing: 0.02em;
 }
 
 h1 {
