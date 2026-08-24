@@ -1,60 +1,130 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio</title>
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
-  <section class="hero">
-    <span class="badge">Available for internships and graduate programs</span>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Onalenna Molehabangwe — Python Developer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
 
-    <h1>Onalenna Molehabangwe</h1>
-    <h3>Python Developer | Responsive Web design | Android Mobile Development | Aspiring Software Engineer</h3>
+<header class="hero">
+  <div class="wrap">
+    <p class="eyebrow terminal">$ status: available for internships &amp; graduate programs</p>
 
-    <p>
-      Building projects, learning full-stack development, and exploring other programming languages
-    </p>
-    
-    <img src="WhatsApp Image 2026-01-27 at 16.08.24.jpeg" alt="HeadShot" class="picture">
-    
-    <div class="buttons">
-      <a href="#projects" class="btn"> View Projects</a>
-      <a href="https://github.com/onahhh12" class="btn">GitHub</a>
-    </div>
-  </section>
-    
-  <section id="projects" class="projects">
-    <h2>PROJECTS</h2>
-
-    <div class="project-grid">
-      <div class="project-card">
-        <h3>Team Project (6 members)</h3>
-        <p>
-          We built a fully functional prototype that unlocks the hidden potential value of gym buddy passes, by connecting existing members together and driving community engagement through seamless coordination.
-        </p>
-        <span class="tech">
-          Android Studio | Java | XML | Firestore
-        </span>
-
-        <div class="project-links">
-          <a href="gymbuddy.html" target = "_blank">More Info</a>
-        </div>
+    <div class="hero-row">
+      <div class="badge" aria-hidden="true">OM</div>
+      <div>
+        <h1>Onalenna Molehabangwe</h1>
+        <p class="role">Python Developer · Android Development · Aspiring Software Engineer</p>
       </div>
-  </section>
-    
-  <section id="contact" class="contact">
-    <h2>Contact Information</h2>
-    <p class="contact-text">
-      I am open to internships, graduate programs, and collaboration opportunities. Feel free to reach out.
+    </div>
+
+    <p class="lede">
+      I build things end to end — from data pipelines and machine learning models to
+      mobile apps and the interfaces that make them usable. Currently exploring
+      full-stack development and expanding into new languages and frameworks.
     </p>
 
-    <div class="contact-links">
-      <a href="mailto: molehabangweonalenna1@outlook.com">Email</a>
-      <a href="https://github.com/onahhh12">GitHub</a>
-      <a href="https://www.linkedin.com/in/onalenna-molehabangwe-65409827b/" target="_blank">LinkedIn</a>
+    <div class="cta-row">
+      <a class="btn btn-primary" href="#projects">View Projects</a>
+      <a class="btn btn-secondary" href="https://github.com/onahhh12" target="_blank" rel="noopener">GitHub</a>
+      <a class="btn btn-secondary" href="resume.pdf" target="_blank" rel="noopener">Resume</a>
+    </div>
+  </div>
+</header>
+
+<main>
+  <section id="projects" class="section">
+    <div class="wrap">
+      <p class="eyebrow">// 01 PROJECTS</p>
+      <h2>Selected work</h2>
+
+      <div class="cards">
+
+        <article class="card">
+          <div class="card-top">
+            <span class="tag-domain tag-ml">ML / DATA</span>
+          </div>
+          <h3>Premier League Match Predictor</h3>
+          <p>
+            A machine learning app that predicts Premier League match outcomes using
+            engineered form, attack, and defense features. Handles the "cold start"
+            problem for newly promoted teams by blending current-season data with
+            prior-season stats, and pulls live standings and fixtures from a public API.
+          </p>
+          <ul class="stack">
+            <li>Python</li>
+            <li>Pandas</li>
+            <li>scikit-learn</li>
+            <li>Streamlit</li>
+            <li>REST API</li>
+          </ul>
+          <div class="card-actions">
+            <a class="link" href="https://github.com/onahhh12/premier-league" target="_blank" rel="noopener">Source →</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card-top">
+            <span class="tag-domain tag-mobile">MOBILE</span>
+            <span class="team-note">Team project · 6 members</span>
+          </div>
+          <h3>Gym Buddy App</h3>
+          <p>
+            A fully functional prototype that unlocks the hidden value of gym
+            memberships by connecting existing members and driving community
+            engagement through seamless coordination.
+          </p>
+          <ul class="stack">
+            <li>Android Studio</li>
+            <li>Java</li>
+            <li>XML</li>
+            <li>Firestore</li>
+          </ul>
+          <div class="card-actions">
+            <a class="link link-muted" href="#" aria-disabled="true">More info →</a>
+          </div>
+        </article>
+
+      </div>
     </div>
   </section>
-  </body>
+
+  <section id="contact" class="section section-alt">
+    <div class="wrap">
+      <p class="eyebrow">// 02 CONTACT</p>
+      <h2>Get in touch</h2>
+      <p class="lede">
+        Open to internships, graduate programs, and collaboration opportunities.
+      </p>
+
+      <div class="contact-list">
+        <a class="contact-row" href="mailto:molehabangweonalenna1@outlook.com">
+          <span class="contact-label">email</span>
+          <span class="contact-value">molehabangweonalenna1@outlook.com</span>
+        </a>
+        <a class="contact-row" href="https://github.com/onahhh12" target="_blank" rel="noopener">
+          <span class="contact-label">github</span>
+          <span class="contact-value">github.com/onahhh12</span>
+        </a>
+        <a class="contact-row" href="https://www.linkedin.com/in/onalenna-molehabangwe-65409827b/" target="_blank" rel="noopener">
+          <span class="contact-label">linkedin</span>
+          <span class="contact-value">onalenna-molehabangwe</span>
+        </a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="wrap">
+    <p>© 2026 Onalenna Molehabangwe</p>
+  </div>
+</footer>
+
+</body>
 </html>
