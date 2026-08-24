@@ -44,7 +44,7 @@ a {
 
 /* --- Availability badge --- */
 .badge-pill {
-  display: inline-block;
+  display: block;
   font-family: var(--font-body);
   font-weight: 500;
   font-size: 13.5px;
@@ -52,8 +52,6 @@ a {
   background: var(--accent-soft);
   padding: 7px 14px;
   border-radius: 20px;
-  margin: 0;
-  display: block;
   width: fit-content;
   margin: 0 auto;
 }
