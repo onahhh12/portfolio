@@ -3,119 +3,45 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Onalenna Molehabangwe — Python Developer</title>
+<title>Gym Buddy App — Onalenna Molehabangwe</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,500;8..60,600;8..60,700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="gymbuddy.css">
 </head>
 <body>
 
+<div class="wrap top-nav">
+  <a class="back-link" href="index.html">← Back to portfolio</a>
+</div>
+
 <header class="hero">
   <div class="wrap">
-    <p class="badge-pill">Available for internships &amp; graduate programs</p>
-    <div class="hero-row">
-      <div>
-        <h1>Onalenna Molehabangwe</h1>
-        <p class="role">Software Engineer · Python · Machine Learning</p>
-      </div>
-    </div>
-
+    <span class="tag-domain tag-mobile">MOBILE · TEAM PROJECT · 6 MEMBERS</span>
+    <h1>Gym Buddy App</h1>
     <p class="lede">
-      I'm a Software Engineering graduate with a focus on Python, machine learning, and building practical applications. I work with Python, Streamlit, and Java, and I'm currently developing my skills in machine learning with the goal of becoming an ML Engineer. I enjoy learning by building projects that turn real-world problems into working software.
+      Gym Buddy is a mobile application designed to help gym members connect through guest and buddy passes, making it easier to create, manage, and join gym sessions.
     </p>
 
-    <div class="cta-row">
-      <a class="btn btn-primary" href="#projects">View Projects</a>
-      <a class="btn btn-secondary" href="https://github.com/onahhh12" target="_blank" rel="noopener">GitHub</a>
-      <a class="btn btn-secondary" href="resume.pdf" target="_blank" rel="noopener">Resume</a>
-    </div>
+    <h2 class="sub-heading">My contribution</h2>
+    <p class="body-text">
+      I primarily worked on the backend of the application, including application logic, Firebase Firestore integration, user data management, session management, and the request-and-approval functionality between users.
+    </p>
+
+    <img src="homepage.png" alt="Gym Buddy landing screen" class="hero-picture">
   </div>
 </header>
 
-<main>
-  <section id="projects" class="section">
-    <div class="wrap">
-      <h2>Projects</h2>
+<section id="functions" class="section">
+  <div class="wrap">
+    <h2>The application</h2>
 
-      <div class="cards">
+    <div class="functions-grid">
 
-        <article class="card">
-          <div class="card-top">
-            <span class="tag-domain tag-ml">ML / DATA</span>
-          </div>
-          <h3>Premier League Match Predictor</h3>
-          <p>
-            A machine learning application that predicts Premier League match outcomes using historical match data and engineered team-performance features.
-            I built a data pipeline to process match results and generate features such as recent form, goals scored and conceded,
-            and team win rates before training and evaluating prediction models.
-            The application also integrates a REST API to display live Premier League standings and match schedules.
-            Built with Python, Pandas, scikit-learn, and Streamlit.
-          </p>
-          <ul class="stack">
-            <li>Python</li>
-            <li>Pandas</li>
-            <li>scikit-learn</li>
-            <li>Streamlit</li>
-            <li>REST API</li>
-          </ul>
-          <div class="project-links">
-            <div>
-              <a class="link" href="https://premierleagueproject.streamlit.app/" target="_blank" rel="noopener">Live Demo</a>
-            </div>
-            <div>
-              <a class="link" href="https://github.com/onahhh12/premier-league" target="_blank" rel="noopener">GitHub</a>
-            </div>
-          </div>
-        </article>
+      <article class="functions-card">
+        <h3>Authentication</h3>
 
-        <article class="card">
-          <div class="card-top">
-            <span class="tag-domain tag-mobile">MOBILE</span>
-            <span class="team-note">Team project · 6 members</span>
-          </div>
-          <h3>Gym Buddy App</h3>
-          <p>
-            Gym Buddy is a collaborative Android fitness application designed to help users manage workouts,
-            set fitness goals, and track their progress.
-            I primarily contributed to the backend application logic and integrated Firebase Firestore for cloud-based data storage and retrieval.
-            The project was developed collaboratively using Java, Android Studio, XML, and Firebase.
-          </p>
-          <ul class="stack">
-            <li>Android Studio</li>
-            <li>Java</li>
-            <li>XML</li>
-            <li>Firestore</li>
-          </ul>
-          <div class="card-actions">
-            <a class="link" href="#gymbuddy-detail">More info ↓</a>
-          </div>
-        </article>
-
-      </div>
-    </div>
-  </section>
-
-  <section id="gymbuddy-detail" class="section section-alt">
-    <div class="wrap">
-      <span class="tag-domain tag-mobile">MOBILE · TEAM PROJECT · 6 MEMBERS</span>
-      <h2 class="detail-title">Gym Buddy App — case study</h2>
-      <p class="lede">
-        Gym Buddy is a mobile application designed to help gym members connect through guest and buddy passes, making it easier to create, manage, and join gym sessions.
-      </p>
-
-      <h3 class="sub-heading">My contribution</h3>
-      <p class="body-text">
-        I primarily worked on the backend of the application, including application logic, Firebase Firestore integration, user data management, session management, and the request-and-approval functionality between users.
-      </p>
-
-      <img src="homepage.png" alt="Gym Buddy landing screen" class="detail-hero-picture">
-
-      <div class="functions-grid">
-
-        <article class="functions-card">
-          <h4>Authentication</h4>
-
+        <div class="shot-row">
           <figure class="shot">
             <img src="login.png" alt="Login screen">
             <figcaption>Users can securely log in to their existing account or create a new account through the registration page.</figcaption>
@@ -125,11 +51,13 @@
             <img src="register.png" alt="Registration screen">
             <figcaption>New users can register an account to access the application.</figcaption>
           </figure>
-        </article>
+        </div>
+      </article>
 
-        <article class="functions-card">
-          <h4>PassHolder page</h4>
+      <article class="functions-card">
+        <h3>PassHolder page</h3>
 
+        <div class="shot-row">
           <figure class="shot">
             <img src="PassHolder.png" alt="PassHolder home screen">
             <figcaption>The PassHolder account is for gym members who want to invite a buddy to the gym.</figcaption>
@@ -144,11 +72,13 @@
             <img src="EditSchedule.png" alt="Edit schedule screen">
             <figcaption>The PassHolder can also edit sessions they've previously created.</figcaption>
           </figure>
-        </article>
+        </div>
+      </article>
 
-        <article class="functions-card">
-          <h4>Non-PassHolder page</h4>
+      <article class="functions-card">
+        <h3>Non-PassHolder page</h3>
 
+        <div class="shot-row">
           <figure class="shot">
             <img src="NonPassHolder.png" alt="Non-PassHolder home screen">
             <figcaption>This page displays sessions created by the PassHolder and lets the Non-PassHolder request to join a preferred session.</figcaption>
@@ -158,36 +88,12 @@
             <img src="RequestStatus.png" alt="Request status screen">
             <figcaption>This page shows the status of a join request. Once the PassHolder approves it, the status updates.</figcaption>
           </figure>
-        </article>
+        </div>
+      </article>
 
-      </div>
     </div>
-  </section>
-
-  <section id="contact" class="section">
-    <div class="wrap">
-      <h2>Get in touch</h2>
-      <p class="lede">
-        Open to internships, graduate programs, and collaboration opportunities.
-      </p>
-
-      <div class="contact-list">
-        <a class="contact-row" href="mailto:molehabangweonalenna1@outlook.com">
-          <span class="contact-label">email</span>
-          <span class="contact-value">molehabangweonalenna1@outlook.com</span>
-        </a>
-        <a class="contact-row" href="https://github.com/onahhh12" target="_blank" rel="noopener">
-          <span class="contact-label">github</span>
-          <span class="contact-value">github.com/onahhh12</span>
-        </a>
-        <a class="contact-row" href="https://www.linkedin.com/in/onalenna-molehabangwe-65409827b/" target="_blank" rel="noopener">
-          <span class="contact-label">linkedin</span>
-          <span class="contact-value">onalenna-molehabangwe</span>
-        </a>
-      </div>
-    </div>
-  </section>
-</main>
+  </div>
+</section>
 
 <footer class="footer">
   <div class="wrap">
