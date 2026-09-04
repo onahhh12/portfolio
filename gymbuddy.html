@@ -1,84 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>GymBuddyApp</title>
-    <link rel="stylesheet" href="gymbuddy.css" />
-  </head>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gym Buddy App — Onalenna Molehabangwe</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,500;8..60,600;8..60,700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="gymbuddy.css">
+</head>
+<body>
 
-  <body>
-    <section class="hero">
+<div class="wrap top-nav">
+  <a class="back-link" href="index.html">← Back to portfolio</a>
+</div>
 
-      <h1>GYM BUDDY APP</h1>
-    
-      <h3>
-        Gym Buddy is a mobile application designed to help gym members
-        connect through guest and buddy passes while making it easier to
-        create, manage, and join gym sessions.
-      </h3>
-      
-      <h2>My Contribution</h2>
-      <p>
-        I primarily worked on the backend of the application, including
-        application logic, Firebase Firestore integration, user data management,
-        session management, and the request and approval functionality between
-        users.
-      </p>
-      
-      <img src="homepage.png" alt="Landing Page" class="picture">
-      
-    </section>
+<header class="hero">
+  <div class="wrap">
+    <span class="tag-domain tag-mobile">MOBILE · TEAM PROJECT · 6 MEMBERS</span>
+    <h1>Gym Buddy App</h1>
+    <p class="lede">
+      Gym Buddy is a mobile application designed to help gym members connect through guest and buddy passes, making it easier to create, manage, and join gym sessions.
+    </p>
 
-    <section id="functions" class="functions">
-      <h2>The Application</h2>
+    <h2 class="sub-heading">My contribution</h2>
+    <p class="body-text">
+      I primarily worked on the backend of the application, including application logic, Firebase Firestore integration, user data management, session management, and the request-and-approval functionality between users.
+    </p>
 
-      <div class="functions-grid">
-        <div class="functions-card">
-          <h3>Authentication</h3>
-          <div class="image-row">
-            
-            <img src="login.png" alt="login" class="picture">
-            
-            <p1>Users can securely log in to their existing account or create a new
-              account through the registration page. </p1>
-            
-            <img src="register.png" alt="register" class="picture">
-            
-            <p1>New users can register an account to access the application.</p1>
-            
-          </div>
-        </div>
+    <img src="homepage.png" alt="Gym Buddy landing screen" class="hero-picture">
+  </div>
+</header>
 
-        <div class="functions-card">
-          <h3>PassHolder Page</h3>
-          <div class="image-row">
-            <img src="PassHolder.png" alt="PassHolder" class="picture">
-            <p1>The PassHolders account is for members of the gym that want to invite a buddy to the gym.</p1>
-            <img src="CreateSchedules.png" alt="CreateSchedules" class="picture">
-            <p1>The PassHolder can create sessions that their buddies can request to join.</p1>
-            <img src="EditSchedule.png" alt="EditShedule" class="picture">
-            <p1>The PassHolder can also edit the sessions they had created as preferred.</p1>
-          </div>
-        </div>
+<section id="functions" class="section">
+  <div class="wrap">
+    <h2>The application</h2>
 
-        <div class="functions-card">
-          <h3>Non-PassHolder Page</h3>
-          <div class="image-row">
-            <img src="NonPassHolder.png" alt="NonPassHolder" class="picture">
-            <p1>This page displays the sessions created by the PassHolder and allows the NonPassHolder to request to join a preferred session.</p1>
-            <img src="RequestStatus.png" alt="RequestStatus" class="picture">
-            <p1>This page provides the status of a request sent to join a session. Once the PassHolder approves, the status changes.</p1>
-          </div>
-        </div>
+    <div class="functions-grid">
 
-        <!--<div class="functions-card">
-          <h3>View Request Status</h3>
-          <div class="image-row">
-            <img src="RequestStatus.png" alt="RequestStatus" class="picture">
-          </div>
-        </div>-->
-      </div>
-    </section>
-  </body>
+      <article class="functions-card">
+        <h3>Authentication</h3>
+
+        <figure class="shot">
+          <img src="login.png" alt="Login screen">
+          <figcaption>Users can securely log in to their existing account or create a new account through the registration page.</figcaption>
+        </figure>
+
+        <figure class="shot">
+          <img src="register.png" alt="Registration screen">
+          <figcaption>New users can register an account to access the application.</figcaption>
+        </figure>
+      </article>
+
+      <article class="functions-card">
+        <h3>PassHolder page</h3>
+
+        <figure class="shot">
+          <img src="PassHolder.png" alt="PassHolder home screen">
+          <figcaption>The PassHolder account is for gym members who want to invite a buddy to the gym.</figcaption>
+        </figure>
+
+        <figure class="shot">
+          <img src="CreateSchedules.png" alt="Create schedule screen">
+          <figcaption>The PassHolder can create sessions that their buddies can request to join.</figcaption>
+        </figure>
+
+        <figure class="shot">
+          <img src="EditSchedule.png" alt="Edit schedule screen">
+          <figcaption>The PassHolder can also edit sessions they've previously created.</figcaption>
+        </figure>
+      </article>
+
+      <article class="functions-card">
+        <h3>Non-PassHolder page</h3>
+
+        <figure class="shot">
+          <img src="NonPassHolder.png" alt="Non-PassHolder home screen">
+          <figcaption>This page displays sessions created by the PassHolder and lets the Non-PassHolder request to join a preferred session.</figcaption>
+        </figure>
+
+        <figure class="shot">
+          <img src="RequestStatus.png" alt="Request status screen">
+          <figcaption>This page shows the status of a join request. Once the PassHolder approves it, the status updates.</figcaption>
+        </figure>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="wrap">
+    <p>© 2026 Onalenna Molehabangwe</p>
+  </div>
+</footer>
+
+</body>
 </html>
