@@ -25,7 +25,9 @@ html {
 
 body {
   margin: 0;
-  background: var(--paper);
+  background-color: var(--paper);
+  background-image: radial-gradient(circle at 1px 1px, rgba(20, 23, 28, 0.05) 1px, transparent 0);
+  background-size: 26px 26px;
   color: var(--ink);
   font-family: var(--font-body);
   line-height: 1.55;
@@ -58,7 +60,7 @@ a {
 
 /* --- Hero --- */
 .hero {
-  padding: 88px 0 64px;
+  padding: 100px 0 56px;
 }
 
 .hero-row {
@@ -89,7 +91,7 @@ h1 {
   font-size: 17px;
   color: var(--ink-soft);
   max-width: 620px;
-  margin: 28px 0 0 0;
+  margin: 28px auto 0;
 }
 
 .cta-row {
@@ -97,6 +99,7 @@ h1 {
   gap: 12px;
   margin-top: 32px;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 .btn {
@@ -137,7 +140,7 @@ h1 {
 
 /* --- Sections --- */
 .section {
-  padding: 72px 0;
+  padding: 96px 0 88px;
 }
 
 .section-alt {
@@ -149,6 +152,12 @@ h2 {
   font-family: var(--font-display);
   font-weight: 600;
   font-size: clamp(24px, 3vw, 30px);
+  margin: 0 0 8px 0;
+}
+
+.section-intro {
+  color: var(--slate);
+  font-size: 15px;
   margin: 0 0 36px 0;
 }
 
@@ -164,6 +173,14 @@ h2 {
   border: 1px solid var(--border);
   border-radius: 12px;
   padding: 32px;
+  box-shadow: 0 1px 2px rgba(20, 23, 28, 0.04);
+  transition: box-shadow 0.15s ease, transform 0.15s ease, border-color 0.15s ease;
+}
+
+.card:hover {
+  box-shadow: 0 10px 28px rgba(20, 23, 28, 0.09);
+  transform: translateY(-3px);
+  border-color: #D7D9D3;
 }
 
 .card-top {
@@ -232,10 +249,10 @@ h2 {
 }
 
 .project-links {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
 }
 
 .card-actions {
@@ -277,12 +294,12 @@ h2 {
   text-decoration: none;
   padding: 18px 4px;
   border-bottom: 1px solid var(--border);
-  transition: padding-left 0.12s ease;
+  transition: padding-left 0.12s ease, color 0.12s ease;
 }
 
 .contact-row:hover {
   padding-left: 10px;
-  color: var(--accent);
+  color: var(--teal);
 }
 
 .contact-label {
@@ -314,7 +331,7 @@ h2 {
   html {
     scroll-behavior: auto;
   }
-  .btn, .contact-row {
+  .btn, .contact-row, .card {
     transition: none;
   }
 }
@@ -335,8 +352,17 @@ a:focus-visible,
     align-items: flex-start;
     gap: 16px;
   }
+  .lede {
+    margin: 24px 0 0 0;
+  }
+  .cta-row {
+    justify-content: flex-start;
+  }
   .card {
     padding: 24px;
+  }
+  .card:hover {
+    transform: none;
   }
   .contact-row {
     flex-direction: column;
