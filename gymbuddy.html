@@ -1,105 +1,256 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Gym Buddy App — Onalenna Molehabangwe</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,500;8..60,600;8..60,700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="gymbuddy.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Gym Buddy App | Onalenna Molehabangwe</title>
+
+  <meta
+    name="description"
+    content="A team-developed mobile application for gym buddy passes, session scheduling, and join-request management."
+  >
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,500;8..60,600;8..60,700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap"
+    rel="stylesheet"
+  >
+
+  <link rel="stylesheet" href="gymbuddy.css">
 </head>
+
 <body>
 
-<div class="wrap top-nav">
-  <a class="back-link" href="index.html">← Back to portfolio</a>
-</div>
+  <main class="project-page">
 
-<header class="hero">
-  <div class="wrap">
-    <span class="tag-domain tag-mobile">MOBILE · TEAM PROJECT · 6 MEMBERS</span>
-    <h1>Gym Buddy App</h1>
-    <p class="lede">
-      Gym Buddy is a mobile application designed to help gym members connect through guest and buddy passes, making it easier to create, manage, and join gym sessions.
-    </p>
+    <a class="back-link" href="index.html">
+      ← Back to portfolio
+    </a>
 
-    <h2 class="sub-heading">My contribution</h2>
-    <p class="body-text">
-      I primarily worked on the backend of the application, including application logic, Firebase Firestore integration, user data management, session management, and the request-and-approval functionality between users.
-    </p>
+    <header class="project-header">
 
-    <img src="homepage.png" alt="Gym Buddy landing screen" class="hero-picture">
-  </div>
-</header>
+      <span class="project-label">
+        MOBILE APPLICATION · TEAM PROJECT
+      </span>
 
-<section id="functions" class="section">
-  <div class="wrap">
-    <h2>The application</h2>
+      <h1>Gym Buddy App</h1>
 
-    <div class="functions-grid">
+      <p class="project-subtitle">
+        Connecting gym members through buddy passes, shared gym
+        sessions, and a request-and-approval workflow.
+      </p>
+
+      <div class="project-meta">
+        <span>6-member team</span>
+        <span>Mobile Development</span>
+        <span>Firebase Firestore</span>
+      </div>
+
+      <img
+        src="homepage.png"
+        alt="Gym Buddy application landing screen"
+        class="hero-picture"
+      >
+
+      <p class="image-caption">
+        The Gym Buddy application landing screen.
+      </p>
+
+    </header>
+
+    <section class="project-section">
+
+      <h2>Project Overview</h2>
+
+      <p>
+        Gym Buddy is a mobile application designed to help gym members
+        connect through guest and buddy passes. It allows members to
+        create gym sessions, discover available sessions, and manage
+        requests to join.
+      </p>
+
+      <p>
+        The application supports two user roles: PassHolders, who create
+        and manage sessions, and Non-PassHolders, who browse sessions
+        and request to join them.
+      </p>
+
+    </section>
+
+    <section class="project-section">
+
+      <h2>My Contribution</h2>
+
+      <p>
+        Within a six-member team, I primarily contributed to the
+        backend functionality and application logic. My work included
+        Firebase Firestore integration, user data management, session
+        management, and the request-and-approval workflow between users.
+      </p>
+
+      <p>
+        This experience strengthened my understanding of how application
+        components interact with stored data and how user actions are
+        translated into application workflows.
+      </p>
+
+    </section>
+
+    <section class="project-section" id="functions">
+
+      <h2>Application Features</h2>
+
+      <p class="section-intro">
+        An overview of the main screens and user workflows.
+      </p>
 
       <article class="functions-card">
-        <h3>Authentication</h3>
+
+        <h3>01 — Authentication</h3>
+
+        <p>
+          Users can register for an account or log in to access
+          the application's features.
+        </p>
 
         <div class="shot-row">
+
           <figure class="shot">
-            <img src="login.png" alt="Login screen">
-            <figcaption>Users can securely log in to their existing account or create a new account through the registration page.</figcaption>
+            <img src="login.png" alt="Gym Buddy login screen">
+            <figcaption>
+              The login screen for existing users.
+            </figcaption>
           </figure>
 
           <figure class="shot">
-            <img src="register.png" alt="Registration screen">
-            <figcaption>New users can register an account to access the application.</figcaption>
+            <img src="register.png" alt="Gym Buddy registration screen">
+            <figcaption>
+              The registration screen for new users.
+            </figcaption>
           </figure>
+
         </div>
+
       </article>
 
       <article class="functions-card">
-        <h3>PassHolder page</h3>
+
+        <h3>02 — PassHolder Features</h3>
+
+        <p>
+          PassHolders can create gym sessions, manage their schedules,
+          and make sessions available for other users to request to join.
+        </p>
 
         <div class="shot-row">
+
           <figure class="shot">
             <img src="PassHolder.png" alt="PassHolder home screen">
-            <figcaption>The PassHolder account is for gym members who want to invite a buddy to the gym.</figcaption>
+            <figcaption>
+              The PassHolder home screen.
+            </figcaption>
           </figure>
 
           <figure class="shot">
-            <img src="CreateSchedules.png" alt="Create schedule screen">
-            <figcaption>The PassHolder can create sessions that their buddies can request to join.</figcaption>
+            <img src="CreateSchedules.png" alt="Create gym session screen">
+            <figcaption>
+              Creating a gym session for potential buddies.
+            </figcaption>
           </figure>
 
           <figure class="shot">
-            <img src="EditSchedule.png" alt="Edit schedule screen">
-            <figcaption>The PassHolder can also edit sessions they've previously created.</figcaption>
+            <img src="EditSchedule.png" alt="Edit gym session screen">
+            <figcaption>
+              Editing previously created sessions.
+            </figcaption>
           </figure>
+
         </div>
+
       </article>
 
       <article class="functions-card">
-        <h3>Non-PassHolder page</h3>
+
+        <h3>03 — Non-PassHolder Features</h3>
+
+        <p>
+          Non-PassHolders can explore available gym sessions,
+          request to join a session, and check the status of their requests.
+        </p>
 
         <div class="shot-row">
+
           <figure class="shot">
             <img src="NonPassHolder.png" alt="Non-PassHolder home screen">
-            <figcaption>This page displays sessions created by the PassHolder and lets the Non-PassHolder request to join a preferred session.</figcaption>
+            <figcaption>
+              Browsing sessions created by PassHolders.
+            </figcaption>
           </figure>
 
           <figure class="shot">
-            <img src="RequestStatus.png" alt="Request status screen">
-            <figcaption>This page shows the status of a join request. Once the PassHolder approves it, the status updates.</figcaption>
+            <img src="RequestStatus.png" alt="Gym session request status screen">
+            <figcaption>
+              Tracking a request and its approval status.
+            </figcaption>
           </figure>
+
         </div>
+
       </article>
 
-    </div>
-  </div>
-</section>
+    </section>
 
-<footer class="footer">
-  <div class="wrap">
-    <p>© 2026 Onalenna Molehabangwe</p>
-  </div>
-</footer>
+    <section class="project-section">
+
+      <h2>Technologies &amp; Skills</h2>
+
+      <p>
+        The project involved mobile application development,
+        backend application logic, cloud database integration,
+        user data management, and workflow implementation.
+      </p>
+
+      <ul class="stack">
+        <li>Mobile Development</li>
+        <li>Firebase Firestore</li>
+        <li>Backend Logic</li>
+        <li>Data Management</li>
+        <li>Session Management</li>
+        <li>Team Collaboration</li>
+      </ul>
+
+    </section>
+
+    <section class="project-section">
+
+      <h2>Key Takeaway</h2>
+
+      <p>
+        Building Gym Buddy gave me practical experience contributing
+        to a collaborative software project and implementing workflows
+        involving users, stored data, and approval processes. It also
+        strengthened my understanding of how backend functionality
+        supports the user experience.
+      </p>
+
+    </section>
+
+    <footer class="project-footer">
+      <a class="link" href="index.html">
+        ← Back to portfolio
+      </a>
+
+      <span class="footer-note">
+        © 2026 Onalenna Molehabangwe
+      </span>
+    </footer>
+
+  </main>
 
 </body>
 </html>
+```
