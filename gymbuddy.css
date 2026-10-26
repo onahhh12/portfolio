@@ -1,276 +1,116 @@
 
-/* --- Gym Buddy Project Page --- */
-
-html {
-  scroll-behavior: smooth;
-}
-
-.project-page,
-.project-page * {
-  box-sizing: border-box;
-}
+/* Tighter project layout */
 
 .project-page {
-  width: 100%;
-  max-width: 1000px;
-  min-width: 0;
-  margin: 0 auto;
-  padding: 28px;
-  overflow-wrap: anywhere;
+  max-width: 900px;
+  padding: 24px;
 }
 
 .project-page .back-link {
-  display: inline-block;
-  margin-bottom: 38px;
-  color: var(--slate);
-  text-decoration: none;
-  transition: color 0.2s ease;
-}
-
-.project-page .back-link:hover {
-  color: var(--accent);
+  margin-bottom: 24px;
 }
 
 .project-header {
-  padding: 12px 0 40px;
-  border-bottom: 1px solid var(--border);
-}
-
-.project-label {
-  display: inline-block;
-  margin-bottom: 18px;
-  padding: 5px 10px;
-  border-radius: 5px;
-  background: var(--teal-soft);
-  color: var(--teal);
-  font-family: var(--font-mono);
-  font-size: 11.5px;
-  letter-spacing: 0.04em;
+  padding: 8px 0 28px;
 }
 
 .project-header h1 {
-  max-width: 800px;
-  margin: 0 0 18px;
-  font-size: clamp(34px, 5vw, 48px);
-  line-height: 1.2;
+  margin-bottom: 12px;
 }
 
 .project-subtitle {
-  max-width: 700px;
-  margin: 0 0 24px;
-  color: var(--ink-soft);
-  font-size: 17px;
-  line-height: 1.7;
+  margin-bottom: 16px;
 }
 
 .project-meta {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 8px;
-  margin: 22px 0;
+  margin: 16px 0;
 }
 
-.project-meta span {
-  padding: 5px 9px;
-  border: 1px solid var(--border);
-  border-radius: 5px;
-  background: var(--paper-alt);
-  color: var(--slate);
-  font-family: var(--font-mono);
-  font-size: 12px;
-}
-
+/* Smaller homepage image */
 .project-header .hero-picture {
-  display: block;
-  width: 100%;
-  max-width: 320px;
-  height: auto;
-  max-height: 560px;
-  margin: 28px 0 12px;
-  object-fit: contain;
-  object-position: left center;
+  width: auto;
+  max-width: 220px;
+  max-height: 380px;
+  margin: 20px 0 8px;
 }
 
-.image-caption {
-  margin: 0;
-  color: var(--slate);
-  font-size: 13px;
-  line-height: 1.6;
-}
-
+/* Less whitespace between sections */
 .project-section {
-  padding: 40px 0;
-  border-bottom: 1px solid var(--border);
+  padding: 26px 0;
 }
 
 .project-section h2 {
-  margin: 0 0 16px;
+  margin-bottom: 12px;
 }
 
 .project-section > p {
-  max-width: 760px;
-  margin: 0 0 16px;
-  color: var(--ink-soft);
-  font-size: 15.5px;
-  line-height: 1.8;
+  margin-bottom: 12px;
+  line-height: 1.65;
 }
 
-.project-section .section-intro {
-  margin-bottom: 28px;
-  color: var(--slate);
-}
-
+/* Tighter feature sections */
 .project-section .functions-card {
-  margin-top: 32px;
+  margin-top: 24px;
 }
 
 .project-section .functions-card h3 {
-  margin: 0 0 12px;
-  font-size: 21px;
-  line-height: 1.4;
+  margin-bottom: 8px;
 }
 
 .project-section .functions-card > p {
-  max-width: 720px;
-  margin: 0 0 24px;
-  color: var(--ink-soft);
-  font-size: 15px;
-  line-height: 1.8;
+  margin-bottom: 16px;
+  line-height: 1.65;
 }
 
+/* Smaller screenshots with less space between them */
 .project-section .shot-row {
-  display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
-  align-items: start;
-  gap: 28px 24px;
-}
-
-.project-section .shot {
-  min-width: 0;
-  margin: 0;
+  gap: 16px;
 }
 
 .project-section .shot img {
-  display: block;
   width: 100%;
-  max-width: 100%;
+  max-width: 260px;
   height: auto;
-  border: 1px solid var(--border);
-  border-radius: 8px;
-  background: var(--paper-alt);
+  margin: 0 auto;
 }
 
 .project-section .shot figcaption {
-  margin-top: 10px;
-  color: var(--slate);
-  font-size: 13px;
-  line-height: 1.6;
-  text-align: left;
+  margin-top: 6px;
+  font-size: 12px;
 }
 
 .project-section .stack {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 8px;
-  margin: 22px 0 0;
-  padding: 0;
-  list-style: none;
-}
-
-.project-section .stack li {
-  padding: 5px 10px;
-  border: 1px solid var(--border);
-  border-radius: 5px;
-  background: var(--paper-alt);
-  color: var(--slate);
-  font-family: var(--font-mono);
-  font-size: 12px;
+  margin-top: 14px;
+  gap: 6px;
 }
 
 .project-footer {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 16px;
-  padding: 28px 0 12px;
+  padding: 20px 0 8px;
 }
 
-.project-footer .link {
-  color: var(--accent);
-  font-size: 14.5px;
-  text-decoration: none;
-}
-
-.project-footer .link:hover {
-  text-decoration: underline;
-}
-
-.footer-note {
-  color: var(--slate);
-  font-family: var(--font-mono);
-  font-size: 12px;
-}
-
-/* --- Tablet --- */
-
-@media (max-width: 720px) {
+/* Mobile */
+@media (max-width: 600px) {
   .project-page {
-    padding: 24px;
-  }
-
-  .project-section .shot-row {
-    gap: 24px 18px;
-  }
-}
-
-/* --- Mobile --- */
-
-@media (max-width: 520px) {
-  .project-page {
-    padding: 20px 18px 36px;
-  }
-
-  .project-page .back-link {
-    margin-bottom: 28px;
-  }
-
-  .project-header {
-    padding-top: 8px;
-    padding-bottom: 30px;
-  }
-
-  .project-header h1 {
-    font-size: clamp(32px, 9vw, 40px);
-  }
-
-  .project-subtitle {
-    font-size: 16px;
-  }
-
-  .project-meta {
-    gap: 7px;
-  }
-
-  .project-header .hero-picture {
-    max-width: 280px;
-    max-height: 480px;
+    padding: 20px 16px 28px;
   }
 
   .project-section {
-    padding: 30px 0;
-  }
-
-  .project-section .functions-card {
-    margin-top: 28px;
+    padding: 22px 0;
   }
 
   .project-section .shot-row {
-    grid-template-columns: minmax(0, 1fr);
-    gap: 24px;
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+
+  .project-section .shot img {
+    max-width: 240px;
   }
 
   .project-footer {
     align-items: flex-start;
     flex-direction: column;
+    gap: 10px;
   }
 }
