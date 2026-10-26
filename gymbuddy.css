@@ -167,11 +167,12 @@ html {
 
 .project-section .shot img {
   display: block;
-  width: 100%;
-  max-width: 260px;
+  width: auto;
+  max-width: min(100%, 280px);
   height: auto;
-  margin: 0 auto;
+  margin: 18px 0 8px;
   border: 1px solid var(--border, #e2e8f0);
+  object-fit: contain;
   border-radius: 6px;
 }
 
