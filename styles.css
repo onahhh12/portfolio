@@ -91,7 +91,7 @@ a {
   content: "";
   position: absolute;
   z-index: -1;
-  top: 35px;
+  top: 50px;
   left: 50%;
   transform: translateX(-50%);
   width: min(900px, 100%);
