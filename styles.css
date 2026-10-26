@@ -92,7 +92,7 @@ a {
   content: "";
   position: absolute;
   z-index: -1;
-  top: 100px;
+  top: 60px;
   left: 50%;
   transform: translateX(-50%);
   width: min(900px, 100%);
