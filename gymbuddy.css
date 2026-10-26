@@ -1,20 +1,30 @@
 
-/* --- Updated project page layout --- */
+/* --- Gym Buddy Project Page --- */
 
 html {
   scroll-behavior: smooth;
 }
 
+.project-page,
+.project-page * {
+  box-sizing: border-box;
+}
+
 .project-page {
+  width: 100%;
   max-width: 1000px;
+  min-width: 0;
   margin: 0 auto;
   padding: 28px;
+  overflow-wrap: anywhere;
 }
 
 .project-page .back-link {
   display: inline-block;
   margin-bottom: 38px;
   color: var(--slate);
+  text-decoration: none;
+  transition: color 0.2s ease;
 }
 
 .project-page .back-link:hover {
@@ -22,34 +32,35 @@ html {
 }
 
 .project-header {
-  padding: 12px 0 48px;
+  padding: 12px 0 40px;
   border-bottom: 1px solid var(--border);
 }
 
 .project-label {
   display: inline-block;
+  margin-bottom: 18px;
+  padding: 5px 10px;
+  border-radius: 5px;
+  background: var(--teal-soft);
+  color: var(--teal);
   font-family: var(--font-mono);
   font-size: 11.5px;
   letter-spacing: 0.04em;
-  color: var(--teal);
-  background: var(--teal-soft);
-  padding: 5px 10px;
-  border-radius: 5px;
-  margin-bottom: 18px;
 }
 
 .project-header h1 {
   max-width: 800px;
+  margin: 0 0 18px;
   font-size: clamp(34px, 5vw, 48px);
   line-height: 1.2;
-  margin-bottom: 18px;
 }
 
 .project-subtitle {
   max-width: 700px;
-  font-size: 17px;
-  color: var(--ink-soft);
   margin: 0 0 24px;
+  color: var(--ink-soft);
+  font-size: 17px;
+  line-height: 1.7;
 }
 
 .project-meta {
@@ -60,21 +71,31 @@ html {
 }
 
 .project-meta span {
+  padding: 5px 9px;
+  border: 1px solid var(--border);
+  border-radius: 5px;
+  background: var(--paper-alt);
+  color: var(--slate);
   font-family: var(--font-mono);
   font-size: 12px;
-  color: var(--slate);
-  background: var(--paper-alt);
-  border: 1px solid var(--border);
-  padding: 5px 9px;
-  border-radius: 5px;
 }
 
 .project-header .hero-picture {
+  display: block;
   width: 100%;
-  max-width: 360px;
+  max-width: 320px;
+  height: auto;
   max-height: 560px;
+  margin: 28px 0 12px;
   object-fit: contain;
-  margin: 28px 0 0;
+  object-position: left center;
+}
+
+.image-caption {
+  margin: 0;
+  color: var(--slate);
+  font-size: 13px;
+  line-height: 1.6;
 }
 
 .project-section {
@@ -88,40 +109,43 @@ html {
 
 .project-section > p {
   max-width: 760px;
-  font-size: 15.5px;
-  color: var(--ink-soft);
   margin: 0 0 16px;
+  color: var(--ink-soft);
+  font-size: 15.5px;
+  line-height: 1.8;
 }
 
 .project-section .section-intro {
-  color: var(--slate);
   margin-bottom: 28px;
+  color: var(--slate);
 }
 
 .project-section .functions-card {
-  margin-top: 20px;
+  margin-top: 32px;
 }
 
 .project-section .functions-card h3 {
+  margin: 0 0 12px;
   font-size: 21px;
-  margin-bottom: 12px;
+  line-height: 1.4;
 }
 
 .project-section .functions-card > p {
   max-width: 720px;
+  margin: 0 0 24px;
   color: var(--ink-soft);
   font-size: 15px;
-  margin-bottom: 24px;
+  line-height: 1.8;
 }
 
 .project-section .shot-row {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 24px;
+  align-items: start;
+  gap: 28px 24px;
 }
 
 .project-section .shot {
-  width: 100%;
   min-width: 0;
   margin: 0;
 }
@@ -131,30 +155,36 @@ html {
   width: 100%;
   max-width: 100%;
   height: auto;
-  margin-bottom: 12px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background: var(--paper-alt);
 }
 
 .project-section .shot figcaption {
-  text-align: left;
+  margin-top: 10px;
+  color: var(--slate);
+  font-size: 13px;
   line-height: 1.6;
+  text-align: left;
 }
 
 .project-section .stack {
   display: flex;
   flex-wrap: wrap;
   gap: 8px;
+  margin: 22px 0 0;
   padding: 0;
   list-style: none;
 }
 
 .project-section .stack li {
+  padding: 5px 10px;
+  border: 1px solid var(--border);
+  border-radius: 5px;
+  background: var(--paper-alt);
+  color: var(--slate);
   font-family: var(--font-mono);
   font-size: 12px;
-  color: var(--slate);
-  background: var(--paper-alt);
-  border: 1px solid var(--border);
-  padding: 5px 10px;
-  border-radius: 5px;
 }
 
 .project-footer {
@@ -181,15 +211,49 @@ html {
   font-size: 12px;
 }
 
-/* --- Responsive layout --- */
+/* --- Tablet --- */
 
-@media (max-width: 600px) {
+@media (max-width: 720px) {
   .project-page {
-    padding: 24px 18px 40px;
+    padding: 24px;
+  }
+
+  .project-section .shot-row {
+    gap: 24px 18px;
+  }
+}
+
+/* --- Mobile --- */
+
+@media (max-width: 520px) {
+  .project-page {
+    padding: 20px 18px 36px;
   }
 
   .project-page .back-link {
     margin-bottom: 28px;
+  }
+
+  .project-header {
+    padding-top: 8px;
+    padding-bottom: 30px;
+  }
+
+  .project-header h1 {
+    font-size: clamp(32px, 9vw, 40px);
+  }
+
+  .project-subtitle {
+    font-size: 16px;
+  }
+
+  .project-meta {
+    gap: 7px;
+  }
+
+  .project-header .hero-picture {
+    max-width: 280px;
+    max-height: 480px;
   }
 
   .project-section {
@@ -197,11 +261,12 @@ html {
   }
 
   .project-section .functions-card {
-    padding: 20px;
+    margin-top: 28px;
   }
 
   .project-section .shot-row {
-    grid-template-columns: 1fr;
+    grid-template-columns: minmax(0, 1fr);
+    gap: 24px;
   }
 
   .project-footer {
