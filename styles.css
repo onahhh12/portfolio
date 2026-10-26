@@ -120,6 +120,7 @@ a {
   margin-top: 22px;
   text-align: center;
   width: 100%;
+  transform: translateY(-10px);
 }
 
 h1 {
