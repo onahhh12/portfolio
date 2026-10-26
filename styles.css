@@ -85,6 +85,7 @@ a {
 .hero {
   position: relative;
   isolation: isolate;
+  padding: 140px 0 56px;
 }
 
 .hero::before {
