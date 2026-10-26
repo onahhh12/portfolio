@@ -63,30 +63,33 @@
 }
 
 /* Smaller screenshots with less space between them */
+
 .project-section .shot-row {
+  display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 16px;
+  align-items: start;
+}
+
+.project-section .shot {
+  min-width: 0;
+  margin: 0;
 }
 
 .project-section .shot img {
+  display: block;
   width: 100%;
-  max-width: 260px;
+  max-width: 100%;
   height: auto;
-  margin: 0 auto;
+  margin: 0;
 }
 
-.project-section .shot figcaption {
-  margin-top: 6px;
-  font-size: 12px;
-}
-
-.project-section .stack {
-  margin-top: 14px;
-  gap: 6px;
-}
-
-.project-footer {
-  padding: 20px 0 8px;
+/* Stack only on small screens */
+@media (max-width: 520px) {
+  .project-section .shot-row {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 12px;
+  }
 }
 
 /* Mobile */
