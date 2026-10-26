@@ -155,7 +155,7 @@ html {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   align-items: start;
-  gap: 18px;
+  gap: 12px;
 }
 
 .project-section .shot {
@@ -168,18 +168,25 @@ html {
 .project-section .shot img {
   display: block;
   width: 100%;
-  max-width: 100%;
+  max-width: 260px;
   height: auto;
-  margin: 0;
+  margin: 0 auto;
   border: 1px solid var(--border, #e2e8f0);
   border-radius: 6px;
 }
 
 .project-section .shot figcaption {
-  margin-top: 6px;
-  color: var(--slate, #64748b);
-  font-size: 12.5px;
-  line-height: 1.5;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: var(--muted);
+  margin-top: 10px;
+  text-align: left;
+}
+
+.project-section .shot p {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin-top: 10px;
 }
 
 /* Technology tags */
@@ -258,7 +265,7 @@ html {
   }
 
   .project-section {
-    padding: 22px 0;
+    padding: 18px 0;
   }
 
   .project-section .functions-card {
